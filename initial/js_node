@@ -1,22 +1,20 @@
-"use strict";
 
-function safeCode(equation) {
+function safeCode(equation: string): number {
     // your code here
     return 0;
 }
 
-var assert = require('assert');
-if (!global.is_checking) {
-    console.log('Example:')
-    console.log(safeCode("-5#*-1=5#"))
+import * as assert from 'assert';
 
-    // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(safeCode("-5#*-1=5#"), 0)
-    assert.equal(safeCode("##*##=302#"), 5)
-    assert.equal(safeCode("19--45=5#"), -1)
-    assert.equal(safeCode("##--11=11"), -1)
-    assert.equal(safeCode("#9+3=22"), 1)
-    assert.equal(safeCode("11*#=##"), 2)
-    assert.equal(safeCode("#9+3=12"), -1)
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+console.log('Example:')
+console.log(safeCode("-5#*-1=5#"))
+
+// These "asserts" are used for self-checking and not for an auto-testing
+assert.equal(safeCode("-5#*-1=5#"), 0)
+assert.equal(safeCode("##*##=302#"), 5)
+assert.equal(safeCode("19--45=5#"), -1)
+assert.equal(safeCode("##--11=11"), -1)
+assert.equal(safeCode("#9+3=22"), 1)
+assert.equal(safeCode("11*#=##"), 2)
+assert.equal(safeCode("#9+3=12"), -1)
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
