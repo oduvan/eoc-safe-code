@@ -1,5 +1,4 @@
-
-function safeCode(equation: string): number {
+export function safeCode(equation: string): number {
     // your code here
     return 0;
 }
